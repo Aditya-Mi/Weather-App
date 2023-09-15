@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/models/my_flutter_app_icons.dart';
 
-const weatherApiKey = '2aa12ce177554ba9aa1110604231308';
 IconData getIcons(int code) {
   switch (code) {
     case 1000:

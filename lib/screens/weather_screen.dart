@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -62,6 +63,7 @@ class _WeatherScreenState extends ConsumerState<WeatherScreen> {
 
   Future<Map<String, dynamic>> getWeather() async {
     try {
+      final weatherApiKey = dotenv.env['API_KEY'];
       final result = await http.get(Uri.parse(
           'https://api.weatherapi.com/v1/forecast.json?key=$weatherApiKey&q=$lat,$long&days=3&aqi=no&alerts=no'));
       final data = jsonDecode(result.body);
