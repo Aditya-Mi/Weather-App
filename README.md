@@ -1,16 +1,21 @@
-# weather_app
+# Weather App
 
-A new Flutter project.
+## Description
+A weather app that detects user's location and shows the weather conditions for that location. Users can also refresh to get the latest weather conditions and change units for temperature, pressure, and wind speed.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+![WeatherScreen](https://github.com/Aditya-Mi/Weather-App/assets/112800760/723b0f21-3f4e-4284-92c1-a3b0eb78cc9b)
 
-A few resources to get you started if this is your first Flutter project:
+![SettingsScreen](https://github.com/Aditya-Mi/Weather-App/assets/112800760/9d2ed50a-f460-4098-8f18-cf1f53aea271)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
+- Detects user's location.
+- User can view current weather conditions.
+- User can refresh to get the latest weather conditions.
+- User can change units for temperature, pressure, and wind speed.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Technologies Used
+- Flutter for building the app.
+- Riverpod for state management.
+- WeatherAPI https://www.weatherapi.com/ for fetching weather data.
